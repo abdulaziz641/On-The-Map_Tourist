@@ -190,15 +190,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dps-yA-Rg9">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMr-Fu-9sf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="r1M-qZ-SbT"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Delete" id="zJN-mr-dqa">
+                                        <connections>
+                                            <action selector="buttonIsPressed:" destination="X0b-y8-1fh" id="iYb-11-1nY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rOB-tF-CKC"/>
+                                    <barButtonItem title="Cancel" id="UW9-BB-gRw">
+                                        <connections>
+                                            <action selector="buttonIsPressed:" destination="X0b-y8-1fh" id="Lby-6J-G8T"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6pt-x7-w1y" firstAttribute="trailing" secondItem="dps-yA-Rg9" secondAttribute="trailing" id="1Pf-ap-zxr"/>
+                            <constraint firstItem="aMr-Fu-9sf" firstAttribute="leading" secondItem="6pt-x7-w1y" secondAttribute="leading" id="6vf-Ai-Og6"/>
                             <constraint firstItem="dps-yA-Rg9" firstAttribute="bottom" secondItem="6pt-x7-w1y" secondAttribute="bottom" id="GI9-9Y-AIP"/>
+                            <constraint firstItem="aMr-Fu-9sf" firstAttribute="trailing" secondItem="6pt-x7-w1y" secondAttribute="trailing" id="IJE-bv-e6A"/>
+                            <constraint firstItem="aMr-Fu-9sf" firstAttribute="trailing" secondItem="6pt-x7-w1y" secondAttribute="trailing" id="Trj-5f-RXi"/>
+                            <constraint firstItem="aMr-Fu-9sf" firstAttribute="top" secondItem="6pt-x7-w1y" secondAttribute="top" id="Y22-nx-yBW"/>
                             <constraint firstItem="dps-yA-Rg9" firstAttribute="leading" secondItem="6pt-x7-w1y" secondAttribute="leading" id="iMp-O7-sIY"/>
-                            <constraint firstItem="dps-yA-Rg9" firstAttribute="top" secondItem="6pt-x7-w1y" secondAttribute="top" id="wUO-Ed-FVI"/>
+                            <constraint firstItem="aMr-Fu-9sf" firstAttribute="leading" secondItem="6pt-x7-w1y" secondAttribute="leading" id="jXi-XR-mn7"/>
+                            <constraint firstItem="dps-yA-Rg9" firstAttribute="top" secondItem="aMr-Fu-9sf" secondAttribute="top" constant="44" id="wUO-Ed-FVI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6pt-x7-w1y"/>
                     </view>

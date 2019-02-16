@@ -11,6 +11,8 @@ import UIKit
 import CoreData
 class SharePhotoViewController: UIViewController {
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     @IBOutlet weak var imageView: UIImageView!
     
     //MARK: properties and IBOutlets
@@ -20,7 +22,18 @@ class SharePhotoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configurenavigationBar()
         configureImage()
+    }
+    
+    //MARK: IBActions
+    @IBAction func buttonIsPressed(_ sender: UIBarButtonItem) {
+        switch sender.title {
+        case "Delete":
+            deletePhoto()
+        case "Cancel":
+            dismiss(animated: true, completion: nil)
+        default:
+            break
+        }
     }
 }

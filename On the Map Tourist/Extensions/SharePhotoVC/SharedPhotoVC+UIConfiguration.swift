@@ -11,11 +11,7 @@ import UIKit
 
 extension SharePhotoViewController {
     
-    //MARK: Configuring navigationBar
-    func configurenavigationBar() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .plain, target: self, action: #selector(sharePhoto))
-    }
-    
+    //MARK: Configuring UI
     func configureImage() {
         if let image = UIImage(data: sharedImage.photoData!) {
             imageView.contentMode = .scaleAspectFit
@@ -27,5 +23,26 @@ extension SharePhotoViewController {
     
     @objc func sharePhoto() {
         print("Sharing Photo")
+    }
+    
+    func deletePhoto() {
+        
+//        let attributedString = NSAttributedString(string: "Yes", attributes: [
+//            NSAttributedString.Key.foregroundColor : UIColor.red
+//            ])
+        
+        let imSureAction = UIAlertAction(title: "Yes", style: .default) { (_) in
+            self.appDelegate.dataController.viewContext.delete(self.sharedImage)
+            try! self.appDelegate.dataController.viewContext.save()
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        let noImNotSureAction = UIAlertAction(title: "Cancel", style: .default)
+        
+        let confirmDeletionMessage = "Are you sure you want to delete the photo?"
+        let confirmDeletionAlert = UIAlertController(title: "Confirm Deletion", message: confirmDeletionMessage, preferredStyle: .alert)
+        confirmDeletionAlert.addAction(imSureAction)
+        confirmDeletionAlert.addAction(noImNotSureAction)
+        present(confirmDeletionAlert, animated: true, completion: nil)
     }
 }

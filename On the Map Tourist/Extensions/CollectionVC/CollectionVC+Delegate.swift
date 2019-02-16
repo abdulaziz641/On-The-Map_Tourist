@@ -43,7 +43,7 @@ extension PhotoAlbumViewController:  UICollectionViewDataSource, UICollectionVie
         let shareImageVC = storyboard?.instantiateViewController(withIdentifier: StoryBoardId.ShareImageVC.rawValue) as! SharePhotoViewController
         shareImageVC.fetchedResultsController = fetchedResultsController
         shareImageVC.sharedImage = fetchedResultsController.object(at: indexPath)
-        navigationController?.pushViewController(shareImageVC, animated: true)
+        present(shareImageVC, animated: true, completion: nil)
     }
 }
 
