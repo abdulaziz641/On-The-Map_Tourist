@@ -8,22 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		894F56E122174370005733E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F56E022174370005733E8 /* AppDelegate.swift */; };
-		894F56E322174370005733E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F56E222174370005733E8 /* ViewController.swift */; };
 		894F56E622174370005733E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894F56E422174370005733E8 /* Main.storyboard */; };
 		894F56E922174370005733E8 /* On_the_Map_Tourist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 894F56E722174370005733E8 /* On_the_Map_Tourist.xcdatamodeld */; };
 		894F56EB22174372005733E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 894F56EA22174372005733E8 /* Assets.xcassets */; };
 		894F56EE22174372005733E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894F56EC22174372005733E8 /* LaunchScreen.storyboard */; };
+		894F56FF221744F0005733E8 /* FlickrPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F56FE221744F0005733E8 /* FlickrPhotoCell.swift */; };
+		894F57012217450A005733E8 /* UIViewController+UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F57002217450A005733E8 /* UIViewController+UIResponder.swift */; };
+		894F570322174534005733E8 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F570222174534005733E8 /* HTTPMethods.swift */; };
+		894F57052217454E005733E8 /* GenericDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F57042217454E005733E8 /* GenericDecoder.swift */; };
+		894F570722174568005733E8 /* FlickrResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F570622174568005733E8 /* FlickrResponse.swift */; };
+		894F57092217458B005733E8 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F57082217458B005733E8 /* NetworkConstants.swift */; };
+		894F570B221745A5005733E8 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F570A221745A5005733E8 /* NetworkClient.swift */; };
+		894F570E221745DE005733E8 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F570D221745DE005733E8 /* DataController.swift */; };
+		894F5712221746A8005733E8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F5711221746A8005733E8 /* MapViewController.swift */; };
+		894F5714221746BB005733E8 /* PhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F5713221746BB005733E8 /* PhotoAlbumViewController.swift */; };
+		894F5716221746D9005733E8 /* CollectionVC+FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F5715221746D9005733E8 /* CollectionVC+FlowLayout.swift */; };
+		894F5718221746F0005733E8 /* CollectionVC+NSFetchedResultsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F5717221746F0005733E8 /* CollectionVC+NSFetchedResultsDelegate.swift */; };
+		894F571A22174710005733E8 /* CollectionVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F571922174710005733E8 /* CollectionVC+Delegate.swift */; };
+		894F571C22174729005733E8 /* CollectionVC+ImageFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F571B22174729005733E8 /* CollectionVC+ImageFetching.swift */; };
+		894F571E22174745005733E8 /* MapVC+MKMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F571D22174745005733E8 /* MapVC+MKMapViewDelegate.swift */; };
+		894F572022174761005733E8 /* MapVC+NSFetchedResultsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F571F22174761005733E8 /* MapVC+NSFetchedResultsControllerDelegate.swift */; };
+		894F572222174771005733E8 /* MapVc+PinAndAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F572122174771005733E8 /* MapVc+PinAndAnnotation.swift */; };
+		894F572422174783005733E8 /* MapVC+UIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F572322174783005733E8 /* MapVC+UIConfigurations.swift */; };
+		894F57262217479B005733E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F57252217479B005733E8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		894F56DD22174370005733E8 /* On the Map Tourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On the Map Tourist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		894F56E022174370005733E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		894F56E222174370005733E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		894F56E522174370005733E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		894F56E822174370005733E8 /* On_the_Map_Tourist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = On_the_Map_Tourist.xcdatamodel; sourceTree = "<group>"; };
 		894F56EA22174372005733E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		894F56ED22174372005733E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		894F56EF22174372005733E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		894F56FE221744F0005733E8 /* FlickrPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotoCell.swift; sourceTree = "<group>"; };
+		894F57002217450A005733E8 /* UIViewController+UIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIResponder.swift"; sourceTree = "<group>"; };
+		894F570222174534005733E8 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		894F57042217454E005733E8 /* GenericDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDecoder.swift; sourceTree = "<group>"; };
+		894F570622174568005733E8 /* FlickrResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrResponse.swift; sourceTree = "<group>"; };
+		894F57082217458B005733E8 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		894F570A221745A5005733E8 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		894F570D221745DE005733E8 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		894F5711221746A8005733E8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		894F5713221746BB005733E8 /* PhotoAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumViewController.swift; sourceTree = "<group>"; };
+		894F5715221746D9005733E8 /* CollectionVC+FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionVC+FlowLayout.swift"; sourceTree = "<group>"; };
+		894F5717221746F0005733E8 /* CollectionVC+NSFetchedResultsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionVC+NSFetchedResultsDelegate.swift"; sourceTree = "<group>"; };
+		894F571922174710005733E8 /* CollectionVC+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionVC+Delegate.swift"; sourceTree = "<group>"; };
+		894F571B22174729005733E8 /* CollectionVC+ImageFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionVC+ImageFetching.swift"; sourceTree = "<group>"; };
+		894F571D22174745005733E8 /* MapVC+MKMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MKMapViewDelegate.swift"; sourceTree = "<group>"; };
+		894F571F22174761005733E8 /* MapVC+NSFetchedResultsControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+NSFetchedResultsControllerDelegate.swift"; sourceTree = "<group>"; };
+		894F572122174771005733E8 /* MapVc+PinAndAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVc+PinAndAnnotation.swift"; sourceTree = "<group>"; };
+		894F572322174783005733E8 /* MapVC+UIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UIConfigurations.swift"; sourceTree = "<group>"; };
+		894F57252217479B005733E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +92,121 @@
 		894F56DF22174370005733E8 /* On the Map Tourist */ = {
 			isa = PBXGroup;
 			children = (
+				894F56FD22174499005733E8 /* Controllers */,
+				894F56FC22174491005733E8 /* Extensions */,
+				894F56FB2217448B005733E8 /* Models */,
+				894F56FA22174484005733E8 /* Network */,
+				894F56F922174477005733E8 /* Resources */,
+				894F56F82217446C005733E8 /* StoryBoards */,
+				894F56F722174463005733E8 /* Utilities */,
+				894F56F62217445B005733E8 /* Views */,
 				894F56E022174370005733E8 /* AppDelegate.swift */,
-				894F56E222174370005733E8 /* ViewController.swift */,
-				894F56E422174370005733E8 /* Main.storyboard */,
-				894F56EA22174372005733E8 /* Assets.xcassets */,
-				894F56EC22174372005733E8 /* LaunchScreen.storyboard */,
 				894F56EF22174372005733E8 /* Info.plist */,
-				894F56E722174370005733E8 /* On_the_Map_Tourist.xcdatamodeld */,
 			);
 			path = "On the Map Tourist";
+			sourceTree = "<group>";
+		};
+		894F56F62217445B005733E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				894F56FE221744F0005733E8 /* FlickrPhotoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		894F56F722174463005733E8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				894F57002217450A005733E8 /* UIViewController+UIResponder.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		894F56F82217446C005733E8 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				894F56EC22174372005733E8 /* LaunchScreen.storyboard */,
+				894F56E422174370005733E8 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		894F56F922174477005733E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				894F56EA22174372005733E8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		894F56FA22174484005733E8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				894F57082217458B005733E8 /* NetworkConstants.swift */,
+				894F570A221745A5005733E8 /* NetworkClient.swift */,
+				894F570C221745B3005733E8 /* ResponseModels */,
+				894F570222174534005733E8 /* HTTPMethods.swift */,
+				894F57042217454E005733E8 /* GenericDecoder.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		894F56FB2217448B005733E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				894F56E722174370005733E8 /* On_the_Map_Tourist.xcdatamodeld */,
+				894F570D221745DE005733E8 /* DataController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		894F56FC22174491005733E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				894F57102217468A005733E8 /* MapVC */,
+				894F570F22174683005733E8 /* CollectionVC */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		894F56FD22174499005733E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				894F5711221746A8005733E8 /* MapViewController.swift */,
+				894F5713221746BB005733E8 /* PhotoAlbumViewController.swift */,
+				894F57252217479B005733E8 /* Constants.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		894F570C221745B3005733E8 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				894F570622174568005733E8 /* FlickrResponse.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		894F570F22174683005733E8 /* CollectionVC */ = {
+			isa = PBXGroup;
+			children = (
+				894F5715221746D9005733E8 /* CollectionVC+FlowLayout.swift */,
+				894F5717221746F0005733E8 /* CollectionVC+NSFetchedResultsDelegate.swift */,
+				894F571922174710005733E8 /* CollectionVC+Delegate.swift */,
+				894F571B22174729005733E8 /* CollectionVC+ImageFetching.swift */,
+			);
+			path = CollectionVC;
+			sourceTree = "<group>";
+		};
+		894F57102217468A005733E8 /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				894F571D22174745005733E8 /* MapVC+MKMapViewDelegate.swift */,
+				894F571F22174761005733E8 /* MapVC+NSFetchedResultsControllerDelegate.swift */,
+				894F572122174771005733E8 /* MapVc+PinAndAnnotation.swift */,
+				894F572322174783005733E8 /* MapVC+UIConfigurations.swift */,
+			);
+			path = MapVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +280,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				894F56E322174370005733E8 /* ViewController.swift in Sources */,
+				894F5712221746A8005733E8 /* MapViewController.swift in Sources */,
+				894F5718221746F0005733E8 /* CollectionVC+NSFetchedResultsDelegate.swift in Sources */,
+				894F57092217458B005733E8 /* NetworkConstants.swift in Sources */,
+				894F570322174534005733E8 /* HTTPMethods.swift in Sources */,
+				894F5716221746D9005733E8 /* CollectionVC+FlowLayout.swift in Sources */,
 				894F56E922174370005733E8 /* On_the_Map_Tourist.xcdatamodeld in Sources */,
+				894F572422174783005733E8 /* MapVC+UIConfigurations.swift in Sources */,
+				894F57012217450A005733E8 /* UIViewController+UIResponder.swift in Sources */,
+				894F571E22174745005733E8 /* MapVC+MKMapViewDelegate.swift in Sources */,
+				894F572022174761005733E8 /* MapVC+NSFetchedResultsControllerDelegate.swift in Sources */,
 				894F56E122174370005733E8 /* AppDelegate.swift in Sources */,
+				894F57262217479B005733E8 /* Constants.swift in Sources */,
+				894F570E221745DE005733E8 /* DataController.swift in Sources */,
+				894F570B221745A5005733E8 /* NetworkClient.swift in Sources */,
+				894F572222174771005733E8 /* MapVc+PinAndAnnotation.swift in Sources */,
+				894F571A22174710005733E8 /* CollectionVC+Delegate.swift in Sources */,
+				894F57052217454E005733E8 /* GenericDecoder.swift in Sources */,
+				894F571C22174729005733E8 /* CollectionVC+ImageFetching.swift in Sources */,
+				894F56FF221744F0005733E8 /* FlickrPhotoCell.swift in Sources */,
+				894F570722174568005733E8 /* FlickrResponse.swift in Sources */,
+				894F5714221746BB005733E8 /* PhotoAlbumViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
