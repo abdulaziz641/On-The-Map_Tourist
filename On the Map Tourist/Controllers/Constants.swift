@@ -13,4 +13,5 @@ enum StoryBoardId: String {
     case LoadNewImagesSegue = "loadRelatedImages"
     case PhotosCollectionVC = "photosVC"
     case PinResueIdentifier = "pin"
+    case ShareImageVC = "shareImage"
 }

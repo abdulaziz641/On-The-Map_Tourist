@@ -19,11 +19,11 @@ struct FlickResponse: Decodable {
             var farm: Int
             var title: String
             var ispublic: Int
-            var url_s: URL?
+            var url_m: URL?
             var isfriend: Int
             var isfamily: Int
-            var height_s: String
-            var width_s: String
+            var height_m: String
+            var width_m: String
         }
         var page: Int
         var pages: Int

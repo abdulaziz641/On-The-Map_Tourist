@@ -180,5 +180,34 @@
             </objects>
             <point key="canvasLocation" x="1999" y="133"/>
         </scene>
+        <!--Share Photo View Controller-->
+        <scene sceneID="Jay-ir-lij">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwO-ca-QV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="shareImage" id="X0b-y8-1fh" customClass="SharePhotoViewController" customModule="On_the_Map_Tourist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q3r-Rj-3DR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dps-yA-Rg9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6pt-x7-w1y" firstAttribute="trailing" secondItem="dps-yA-Rg9" secondAttribute="trailing" id="1Pf-ap-zxr"/>
+                            <constraint firstItem="dps-yA-Rg9" firstAttribute="bottom" secondItem="6pt-x7-w1y" secondAttribute="bottom" id="GI9-9Y-AIP"/>
+                            <constraint firstItem="dps-yA-Rg9" firstAttribute="leading" secondItem="6pt-x7-w1y" secondAttribute="leading" id="iMp-O7-sIY"/>
+                            <constraint firstItem="dps-yA-Rg9" firstAttribute="top" secondItem="6pt-x7-w1y" secondAttribute="top" id="wUO-Ed-FVI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6pt-x7-w1y"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="dps-yA-Rg9" id="zoA-qS-on2"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2871.0144927536235" y="132.58928571428572"/>
+        </scene>
     </scenes>
 </document>

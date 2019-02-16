@@ -40,7 +40,10 @@ extension PhotoAlbumViewController:  UICollectionViewDataSource, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        removePhoto(indexPath: indexPath)
+        let shareImageVC = storyboard?.instantiateViewController(withIdentifier: StoryBoardId.ShareImageVC.rawValue) as! SharePhotoViewController
+        shareImageVC.fetchedResultsController = fetchedResultsController
+        shareImageVC.sharedImage = fetchedResultsController.object(at: indexPath)
+        navigationController?.pushViewController(shareImageVC, animated: true)
     }
 }
 

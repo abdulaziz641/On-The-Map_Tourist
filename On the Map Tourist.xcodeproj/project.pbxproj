@@ -31,6 +31,8 @@
 		894F572222174771005733E8 /* MapVc+PinAndAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F572122174771005733E8 /* MapVc+PinAndAnnotation.swift */; };
 		894F572422174783005733E8 /* MapVC+UIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F572322174783005733E8 /* MapVC+UIConfigurations.swift */; };
 		894F57262217479B005733E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F57252217479B005733E8 /* Constants.swift */; };
+		89EFD98822182A5B006CC37C /* SharePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFD98722182A5B006CC37C /* SharePhotoViewController.swift */; };
+		89EFD98B221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFD98A221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		894F572122174771005733E8 /* MapVc+PinAndAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVc+PinAndAnnotation.swift"; sourceTree = "<group>"; };
 		894F572322174783005733E8 /* MapVC+UIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UIConfigurations.swift"; sourceTree = "<group>"; };
 		894F57252217479B005733E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		89EFD98722182A5B006CC37C /* SharePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoViewController.swift; sourceTree = "<group>"; };
+		89EFD98A221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedPhotoVC+UIConfiguration.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 		894F56FC22174491005733E8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				89EFD9892218375A006CC37C /* SharePhotoVC */,
 				894F57102217468A005733E8 /* MapVC */,
 				894F570F22174683005733E8 /* CollectionVC */,
 			);
@@ -175,6 +180,7 @@
 				894F5711221746A8005733E8 /* MapViewController.swift */,
 				894F5713221746BB005733E8 /* PhotoAlbumViewController.swift */,
 				894F57252217479B005733E8 /* Constants.swift */,
+				89EFD98722182A5B006CC37C /* SharePhotoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -207,6 +213,14 @@
 				894F572322174783005733E8 /* MapVC+UIConfigurations.swift */,
 			);
 			path = MapVC;
+			sourceTree = "<group>";
+		};
+		89EFD9892218375A006CC37C /* SharePhotoVC */ = {
+			isa = PBXGroup;
+			children = (
+				89EFD98A221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift */,
+			);
+			path = SharePhotoVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,12 +305,14 @@
 				894F571E22174745005733E8 /* MapVC+MKMapViewDelegate.swift in Sources */,
 				894F572022174761005733E8 /* MapVC+NSFetchedResultsControllerDelegate.swift in Sources */,
 				894F56E122174370005733E8 /* AppDelegate.swift in Sources */,
+				89EFD98B221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift in Sources */,
 				894F57262217479B005733E8 /* Constants.swift in Sources */,
 				894F570E221745DE005733E8 /* DataController.swift in Sources */,
 				894F570B221745A5005733E8 /* NetworkClient.swift in Sources */,
 				894F572222174771005733E8 /* MapVc+PinAndAnnotation.swift in Sources */,
 				894F571A22174710005733E8 /* CollectionVC+Delegate.swift in Sources */,
 				894F57052217454E005733E8 /* GenericDecoder.swift in Sources */,
+				89EFD98822182A5B006CC37C /* SharePhotoViewController.swift in Sources */,
 				894F571C22174729005733E8 /* CollectionVC+ImageFetching.swift in Sources */,
 				894F56FF221744F0005733E8 /* FlickrPhotoCell.swift in Sources */,
 				894F570722174568005733E8 /* FlickrResponse.swift in Sources */,

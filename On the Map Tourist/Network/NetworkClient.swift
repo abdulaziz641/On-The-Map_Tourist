@@ -50,7 +50,7 @@ class NetworkClient {
             Constants.FlickrParameterKeys.Method: Constants.FlickrParameterValues.SearchMethod,
             Constants.FlickrParameterKeys.APIKey: Constants.FlickrParameterValues.APIKey,
             Constants.FlickrParameterKeys.SafeSearch: Constants.FlickrParameterValues.UseSafeSearch,
-            Constants.FlickrParameterKeys.Extras: Constants.FlickrParameterValues.SmallURL,
+            Constants.FlickrParameterKeys.Extras: Constants.FlickrParameterValues.MediumURL,
             Constants.FlickrParameterKeys.BoundingBox: bboxString(latitude: lat, longitude: long),
             Constants.FlickrParameterKeys.Format: Constants.FlickrParameterValues.ResponseFormat,
             Constants.FlickrParameterKeys.NoJSONCallback: Constants.FlickrParameterValues.DisableJSONCallback,
@@ -95,7 +95,7 @@ class NetworkClient {
             var images: [String] = []
             
             for image in responseFromFlickr.photos.photo {
-                let imageUrl = image.url_s?.absoluteString
+                let imageUrl = image.url_m?.absoluteString
                 images.append(imageUrl!)
             }
             completion(true, nil, nil, images)
