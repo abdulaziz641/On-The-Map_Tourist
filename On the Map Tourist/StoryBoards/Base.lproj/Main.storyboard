@@ -183,14 +183,14 @@
         <!--Share Photo View Controller-->
         <scene sceneID="Jay-ir-lij">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xwO-ca-QV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="shareImage" id="X0b-y8-1fh" customClass="SharePhotoViewController" customModule="On_the_Map_Tourist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q3r-Rj-3DR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dps-yA-Rg9">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dps-yA-Rg9">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMr-Fu-9sf">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -228,8 +228,10 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="dps-yA-Rg9" id="zoA-qS-on2"/>
+                        <outlet property="topToolBar" destination="aMr-Fu-9sf" id="MS1-RK-X7m"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwO-ca-QV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2871.0144927536235" y="132.58928571428572"/>
         </scene>

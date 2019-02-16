@@ -33,6 +33,7 @@
 		894F57262217479B005733E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F57252217479B005733E8 /* Constants.swift */; };
 		89EFD98822182A5B006CC37C /* SharePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFD98722182A5B006CC37C /* SharePhotoViewController.swift */; };
 		89EFD98B221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFD98A221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift */; };
+		89EFD98D22186B48006CC37C /* SharePhotosVC+ImageFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFD98C22186B48006CC37C /* SharePhotosVC+ImageFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		894F57252217479B005733E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		89EFD98722182A5B006CC37C /* SharePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoViewController.swift; sourceTree = "<group>"; };
 		89EFD98A221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedPhotoVC+UIConfiguration.swift"; sourceTree = "<group>"; };
+		89EFD98C22186B48006CC37C /* SharePhotosVC+ImageFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharePhotosVC+ImageFunctions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				89EFD98A221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift */,
+				89EFD98C22186B48006CC37C /* SharePhotosVC+ImageFunctions.swift */,
 			);
 			path = SharePhotoVC;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				894F5712221746A8005733E8 /* MapViewController.swift in Sources */,
+				89EFD98D22186B48006CC37C /* SharePhotosVC+ImageFunctions.swift in Sources */,
 				894F5718221746F0005733E8 /* CollectionVC+NSFetchedResultsDelegate.swift in Sources */,
 				894F57092217458B005733E8 /* NetworkConstants.swift in Sources */,
 				894F570322174534005733E8 /* HTTPMethods.swift in Sources */,

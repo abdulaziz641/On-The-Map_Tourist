@@ -14,15 +14,17 @@ class SharePhotoViewController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var topToolBar: UIToolbar!
     
     //MARK: properties and IBOutlets
     var sharedImage: Photo!
-    
+    var savedImage: UIImage!
     var fetchedResultsController: NSFetchedResultsController<Photo>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureImage()
+        configureGesureRecognizer()
     }
     
     //MARK: IBActions
