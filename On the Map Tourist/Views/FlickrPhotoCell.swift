@@ -26,11 +26,13 @@ class FlickrPhotoCell: UICollectionViewCell {
         super.prepareForReuse()
         imageView.image = nil
         isLiked = false
+        likePhotoButton.setImage(UIImage(named: "like_black-50.png"), for: .normal)
         downloadingIndicator.startAnimating()
-        currentPhoto = nil
+
     }
     
     @IBAction func likePhotoButtonPressed(_ sender: Any) {
+        isLiked = !isLiked
         shouldLikePhoto(isLiked, photo: currentPhoto)
     }
     
@@ -39,12 +41,12 @@ class FlickrPhotoCell: UICollectionViewCell {
         imageView.image = image
         isLiked = like
         downloadingIndicator.stopAnimating()
+        likePhotoButton.isEnabled = true
         shouldLikePhoto(like, photo: currentPhoto)
     }
     
     //MARK: like / dislike photo
     func shouldLikePhoto(_ like: Bool, photo: Photo) {
-        //likePhotoButton.isHidden = false
         let image = like ? UIImage(named: "like-red-filled-50.png") : UIImage(named: "like_black-50.png")
         likePhotoButton.setImage(image, for: .normal)
         like ? delegate.likePhoto(photo: photo) : delegate.deslikePhoto(photo: photo)

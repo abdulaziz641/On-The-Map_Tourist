@@ -26,10 +26,12 @@ extension PhotoAlbumViewController:  UICollectionViewDataSource, UICollectionVie
             cell.configureUI(with: image, like: photo.isLiked)
         } else if let url = URL(string: photo.photoURL ?? "") {
             NetworkClient.downloadImage(url: url) { (isSucceeded, data, _) in
+                
                 guard (isSucceeded == true) else {
                     return
                 }
-                let photo = Photo()
+                
+                //let photo = Photo()
                 photo.photoData = data
                 cell.currentPhoto = photo
                 DispatchQueue.main.async {
