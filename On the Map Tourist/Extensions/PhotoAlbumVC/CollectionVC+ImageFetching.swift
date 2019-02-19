@@ -53,4 +53,3 @@ extension PhotoAlbumViewController {
         try? appDelegate.dataController.viewContext.save()
     }
 }
-

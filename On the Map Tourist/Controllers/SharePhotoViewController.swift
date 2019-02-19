@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
 import CoreData
+
 class SharePhotoViewController: UIViewController {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate

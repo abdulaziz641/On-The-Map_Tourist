@@ -20,6 +20,7 @@ extension SharePhotoViewController{
         }
     }
     
+    //MARK: prepare Image for saving
     func prepareImageForSaving() -> UIImage {
         hideToolBars(true)
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -30,6 +31,7 @@ extension SharePhotoViewController{
         return generatedImage
     }
     
+    //MARK: delete photo from store and collectionView
     func deletePhoto() {
         let imSureAction = UIAlertAction(title: "Yes", style: .default) { (_) in
             self.appDelegate.dataController.viewContext.delete(self.sharedImage)
@@ -45,5 +47,4 @@ extension SharePhotoViewController{
         confirmDeletionAlert.addAction(noImNotSureAction)
         present(confirmDeletionAlert, animated: true, completion: nil)
     }
-
 }

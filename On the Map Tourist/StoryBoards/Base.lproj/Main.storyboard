@@ -122,28 +122,36 @@
                                             <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vhi-ld-3aE">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vhi-ld-3aE">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="saq-a9-pNi">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsi-do-SVH">
+                                                    <rect key="frame" x="80" y="80" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="hfp-d8-2I0"/>
+                                                        <constraint firstAttribute="height" constant="40" id="oxS-3w-a9Y"/>
+                                                    </constraints>
+                                                    <state key="normal" image="like_black-50"/>
+                                                    <connections>
+                                                        <action selector="likePhotoButtonPressed:" destination="UHt-4Q-6fC" eventType="touchUpInside" id="qH2-3x-S4a"/>
+                                                    </connections>
+                                                </button>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="saq-a9-pNi">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="color" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                 </activityIndicatorView>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="saq-a9-pNi" secondAttribute="trailing" id="1Eh-Mn-pxw"/>
-                                            <constraint firstItem="saq-a9-pNi" firstAttribute="top" secondItem="UHt-4Q-6fC" secondAttribute="top" id="1ik-Oq-nVv"/>
-                                            <constraint firstItem="Vhi-ld-3aE" firstAttribute="top" secondItem="UHt-4Q-6fC" secondAttribute="top" id="CHi-04-unG"/>
-                                            <constraint firstAttribute="trailing" secondItem="Vhi-ld-3aE" secondAttribute="trailing" id="DuK-z8-7Sl"/>
-                                            <constraint firstAttribute="bottom" secondItem="Vhi-ld-3aE" secondAttribute="bottom" id="Kia-lF-omd"/>
-                                            <constraint firstItem="Vhi-ld-3aE" firstAttribute="leading" secondItem="UHt-4Q-6fC" secondAttribute="leading" id="Qev-a7-jzr"/>
-                                            <constraint firstItem="saq-a9-pNi" firstAttribute="leading" secondItem="UHt-4Q-6fC" secondAttribute="leading" id="QgX-lB-KAc"/>
-                                            <constraint firstAttribute="bottom" secondItem="saq-a9-pNi" secondAttribute="bottom" id="V7n-cj-Wfl"/>
+                                            <constraint firstItem="Qsi-do-SVH" firstAttribute="top" secondItem="UHt-4Q-6fC" secondAttribute="top" constant="80" id="cOB-Kn-3sE"/>
+                                            <constraint firstItem="Qsi-do-SVH" firstAttribute="leading" secondItem="UHt-4Q-6fC" secondAttribute="leading" constant="80" id="txr-Bv-o2f"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="downloadingIndicator" destination="saq-a9-pNi" id="5WX-yl-Hgw"/>
                                             <outlet property="imageView" destination="Vhi-ld-3aE" id="fGz-uc-ccQ"/>
+                                            <outlet property="likePhotoButton" destination="Qsi-do-SVH" id="1CW-4z-WY7"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -236,4 +244,7 @@
             <point key="canvasLocation" x="2871.0144927536235" y="132.58928571428572"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="like_black-50" width="37.5" height="37.5"/>
+    </resources>
 </document>

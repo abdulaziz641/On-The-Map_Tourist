@@ -31,6 +31,9 @@
 		894F572222174771005733E8 /* MapVc+PinAndAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F572122174771005733E8 /* MapVc+PinAndAnnotation.swift */; };
 		894F572422174783005733E8 /* MapVC+UIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F572322174783005733E8 /* MapVC+UIConfigurations.swift */; };
 		894F57262217479B005733E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F57252217479B005733E8 /* Constants.swift */; };
+		89D702F92219FD13002471BA /* FavoritePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D702F82219FD13002471BA /* FavoritePhotosViewController.swift */; };
+		89D702FB221A11E9002471BA /* CollectionVC+ImageLikeAndDeslike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D702FA221A11E9002471BA /* CollectionVC+ImageLikeAndDeslike.swift */; };
+		89D702FD221A123E002471BA /* PhotoAlbumViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D702FC221A123E002471BA /* PhotoAlbumViewControllerProtocol.swift */; };
 		89EFD98822182A5B006CC37C /* SharePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFD98722182A5B006CC37C /* SharePhotoViewController.swift */; };
 		89EFD98B221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFD98A221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift */; };
 		89EFD98D22186B48006CC37C /* SharePhotosVC+ImageFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFD98C22186B48006CC37C /* SharePhotosVC+ImageFunctions.swift */; };
@@ -63,6 +66,9 @@
 		894F572122174771005733E8 /* MapVc+PinAndAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVc+PinAndAnnotation.swift"; sourceTree = "<group>"; };
 		894F572322174783005733E8 /* MapVC+UIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UIConfigurations.swift"; sourceTree = "<group>"; };
 		894F57252217479B005733E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		89D702F82219FD13002471BA /* FavoritePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotosViewController.swift; sourceTree = "<group>"; };
+		89D702FA221A11E9002471BA /* CollectionVC+ImageLikeAndDeslike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionVC+ImageLikeAndDeslike.swift"; sourceTree = "<group>"; };
+		89D702FC221A123E002471BA /* PhotoAlbumViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumViewControllerProtocol.swift; sourceTree = "<group>"; };
 		89EFD98722182A5B006CC37C /* SharePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoViewController.swift; sourceTree = "<group>"; };
 		89EFD98A221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedPhotoVC+UIConfiguration.swift"; sourceTree = "<group>"; };
 		89EFD98C22186B48006CC37C /* SharePhotosVC+ImageFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharePhotosVC+ImageFunctions.swift"; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				894F56FD22174499005733E8 /* Controllers */,
+				89D702FE221A1246002471BA /* Protocols */,
 				894F56FC22174491005733E8 /* Extensions */,
 				894F56FB2217448B005733E8 /* Models */,
 				894F56FA22174484005733E8 /* Network */,
@@ -171,7 +178,7 @@
 			children = (
 				89EFD9892218375A006CC37C /* SharePhotoVC */,
 				894F57102217468A005733E8 /* MapVC */,
-				894F570F22174683005733E8 /* CollectionVC */,
+				894F570F22174683005733E8 /* PhotoAlbumVC */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 				894F5713221746BB005733E8 /* PhotoAlbumViewController.swift */,
 				894F57252217479B005733E8 /* Constants.swift */,
 				89EFD98722182A5B006CC37C /* SharePhotoViewController.swift */,
+				89D702F82219FD13002471BA /* FavoritePhotosViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -195,15 +203,16 @@
 			path = ResponseModels;
 			sourceTree = "<group>";
 		};
-		894F570F22174683005733E8 /* CollectionVC */ = {
+		894F570F22174683005733E8 /* PhotoAlbumVC */ = {
 			isa = PBXGroup;
 			children = (
 				894F5715221746D9005733E8 /* CollectionVC+FlowLayout.swift */,
 				894F5717221746F0005733E8 /* CollectionVC+NSFetchedResultsDelegate.swift */,
 				894F571922174710005733E8 /* CollectionVC+Delegate.swift */,
 				894F571B22174729005733E8 /* CollectionVC+ImageFetching.swift */,
+				89D702FA221A11E9002471BA /* CollectionVC+ImageLikeAndDeslike.swift */,
 			);
-			path = CollectionVC;
+			path = PhotoAlbumVC;
 			sourceTree = "<group>";
 		};
 		894F57102217468A005733E8 /* MapVC */ = {
@@ -215,6 +224,14 @@
 				894F572322174783005733E8 /* MapVC+UIConfigurations.swift */,
 			);
 			path = MapVC;
+			sourceTree = "<group>";
+		};
+		89D702FE221A1246002471BA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				89D702FC221A123E002471BA /* PhotoAlbumViewControllerProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		89EFD9892218375A006CC37C /* SharePhotoVC */ = {
@@ -311,14 +328,17 @@
 				894F56E122174370005733E8 /* AppDelegate.swift in Sources */,
 				89EFD98B221837A0006CC37C /* SharedPhotoVC+UIConfiguration.swift in Sources */,
 				894F57262217479B005733E8 /* Constants.swift in Sources */,
+				89D702F92219FD13002471BA /* FavoritePhotosViewController.swift in Sources */,
 				894F570E221745DE005733E8 /* DataController.swift in Sources */,
 				894F570B221745A5005733E8 /* NetworkClient.swift in Sources */,
 				894F572222174771005733E8 /* MapVc+PinAndAnnotation.swift in Sources */,
 				894F571A22174710005733E8 /* CollectionVC+Delegate.swift in Sources */,
+				89D702FD221A123E002471BA /* PhotoAlbumViewControllerProtocol.swift in Sources */,
 				894F57052217454E005733E8 /* GenericDecoder.swift in Sources */,
 				89EFD98822182A5B006CC37C /* SharePhotoViewController.swift in Sources */,
 				894F571C22174729005733E8 /* CollectionVC+ImageFetching.swift in Sources */,
 				894F56FF221744F0005733E8 /* FlickrPhotoCell.swift in Sources */,
+				89D702FB221A11E9002471BA /* CollectionVC+ImageLikeAndDeslike.swift in Sources */,
 				894F570722174568005733E8 /* FlickrResponse.swift in Sources */,
 				894F5714221746BB005733E8 /* PhotoAlbumViewController.swift in Sources */,
 			);
