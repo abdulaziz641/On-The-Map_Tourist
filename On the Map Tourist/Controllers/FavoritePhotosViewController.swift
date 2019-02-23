@@ -16,7 +16,6 @@ class FavoritePhotosViewController: UICollectionViewController {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var fetchedResultsController: NSFetchedResultsController<Photo>!
-    var likedImages: Photo!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +28,7 @@ class FavoritePhotosViewController: UICollectionViewController {
         let sortDescriptor = NSSortDescriptor(key: "photoURL", ascending: false)
         fetchRequest.sortDescriptors = [sortDescriptor]
         
-        let predicate = NSPredicate(format: "isLiked == %@", "YES")
+        let predicate = NSPredicate(format: "isLiked == %@", NSNumber(value: true))
         fetchRequest.predicate = predicate
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: appDelegate.dataController.viewContext, sectionNameKeyPath: nil, cacheName: nil)

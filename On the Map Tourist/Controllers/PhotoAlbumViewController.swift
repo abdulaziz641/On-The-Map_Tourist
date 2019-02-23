@@ -69,13 +69,4 @@ class PhotoAlbumViewController: UIViewController {
             showAlert(title: "Failure", message: "The fetch could not be performed", buttonText: "OK")
         }
     }
-    
-    //MARK: Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == StoryBoardId.ShowFavoritePhotosSegue.rawValue {
-            let favPhotosVC = segue.destination as! FavoritePhotosViewController
-            try! appDelegate.dataController.viewContext.save()
-            //favPhotosVC.fetchedResultsController = fetchedResultsController
-        }
-    }
 }

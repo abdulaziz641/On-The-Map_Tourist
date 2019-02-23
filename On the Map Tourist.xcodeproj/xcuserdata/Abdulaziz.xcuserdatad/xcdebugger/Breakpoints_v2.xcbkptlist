@@ -27,53 +27,5 @@
             </Actions>
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "On the Map Tourist/Extensions/PhotoAlbumVC/CollectionVC+Delegate.swift"
-            timestampString = "572616540.739448"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "On_the_Map_Tourist.PhotoAlbumViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "On the Map Tourist"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Abdulaziz/Documents/Udacity/Submitted%20Projects/On%20the%20Map%20Tourist/On%20the%20Map%20Tourist/Extensions/PhotoAlbumVC/CollectionVC+Delegate.swift"
-                  timestampString = "572547270.6214"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "1465">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "On_the_Map_Tourist.PhotoAlbumViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "On the Map Tourist"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Abdulaziz/Documents/Udacity/Submitted%20Projects/On%20the%20Map%20Tourist/On%20the%20Map%20Tourist/Extensions/PhotoAlbumVC/CollectionVC+Delegate.swift"
-                  timestampString = "572547270.62374"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "1508">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
