@@ -13,7 +13,6 @@ import CoreData
 class PhotoAlbumViewController: UIViewController {
     
     //MARK: class properties and outlets
-    @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var loadNewImagesButton: UIBarButtonItem!
@@ -61,13 +60,22 @@ class PhotoAlbumViewController: UIViewController {
         let predicate = NSPredicate(format: "pin == %@", loadedPinFromStore)
         fetchRequest.predicate = predicate
         
-        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: appDelegate.dataController.viewContext, sectionNameKeyPath: nil, cacheName: nil)
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: appDelegate.dataController.viewContext, sectionNameKeyPath: nil, cacheName: "photos")
         fetchedResultsController.delegate = self
         
         do {
             try fetchedResultsController.performFetch()
         } catch {
             showAlert(title: "Failure", message: "The fetch could not be performed", buttonText: "OK")
+        }
+    }
+    
+    //MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == StoryBoardId.ShowFavoritePhotosSegue.rawValue {
+            let favPhotosVC = segue.destination as! FavoritePhotosViewController
+            try! appDelegate.dataController.viewContext.save()
+            //favPhotosVC.fetchedResultsController = fetchedResultsController
         }
     }
 }

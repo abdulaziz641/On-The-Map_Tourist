@@ -7,8 +7,8 @@
 //
 
 import Foundation
+
 class NetworkClient {
-    
     //MARK: A function that will return a String of components based on the provided parameters.
     static func addParameters(_ parameters: [String: Any]) -> String {
         var components = URLComponents()
@@ -57,7 +57,6 @@ class NetworkClient {
             Constants.FlickrParameterKeys.Accuracy: Constants.FlickrParameterValues.Accuracy,
             Constants.FlickrParameterKeys.PerPage: Constants.FlickrParameterValues.PerPage
             ] as [String: AnyObject]
-        
         if pages == 0 {
             methodParameters[Constants.FlickrParameterKeys.Page] = String(Int.random(in: 1..<1000)) as AnyObject
         }
@@ -99,7 +98,7 @@ class NetworkClient {
                 images.append(imageUrl!)
             }
             completion(true, nil, nil, images)
-            }.resume()
+        }.resume()
     }
     
     //MARK Flickr bbox
@@ -135,7 +134,6 @@ class NetworkClient {
             }
             
             completion(true, data, "")
-            }.resume()
+        }.resume()
     }
 }
-

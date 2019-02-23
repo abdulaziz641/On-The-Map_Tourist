@@ -27,8 +27,9 @@ class FlickrPhotoCell: UICollectionViewCell {
         imageView.image = nil
         isLiked = false
         likePhotoButton.setImage(UIImage(named: "like_black-50.png"), for: .normal)
-        downloadingIndicator.startAnimating()
-
+        if !downloadingIndicator.isAnimating {
+            downloadingIndicator.startAnimating()
+        }
     }
     
     @IBAction func likePhotoButtonPressed(_ sender: Any) {
@@ -36,8 +37,8 @@ class FlickrPhotoCell: UICollectionViewCell {
         shouldLikePhoto(isLiked, photo: currentPhoto)
     }
     
-    //MARK: Configure UI
-    func configureUI(with image: UIImage, like: Bool) {
+    //MARK: Configure Cell
+    func configureCell(with image: UIImage, like: Bool) {
         imageView.image = image
         isLiked = like
         downloadingIndicator.stopAnimating()

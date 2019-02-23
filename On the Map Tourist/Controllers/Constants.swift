@@ -10,8 +10,11 @@ import Foundation
 
 enum StoryBoardId: String {
     case FlickrCellResueIdentifier = "flickrPhotoCell"
-    case LoadNewImagesSegue = "loadRelatedImages"
-    case PhotosCollectionVC = "photosVC"
+    case FavPhotoCellReuseIdentifier = "likedPhotoCell"
     case PinResueIdentifier = "pin"
+    case LoadNewImagesSegue = "loadRelatedImages"
+    case ShowFavoritePhotosSegue = "showFavoritePhotos"
+    case PhotosCollectionVC = "photosVC"
+    case LikePhotosVC = "likePhotosVC"
     case ShareImageVC = "shareImage"
 }
