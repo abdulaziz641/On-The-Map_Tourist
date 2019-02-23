@@ -26,6 +26,7 @@ class FlickrPhotoCell: UICollectionViewCell {
         super.prepareForReuse()
         imageView.image = nil
         isLiked = false
+        likePhotoButton.isHidden = true
         likePhotoButton.setImage(UIImage(named: "like_black-50.png"), for: .normal)
         if !downloadingIndicator.isAnimating {
             downloadingIndicator.startAnimating()
@@ -43,6 +44,7 @@ class FlickrPhotoCell: UICollectionViewCell {
         isLiked = like
         downloadingIndicator.stopAnimating()
         likePhotoButton.isEnabled = true
+        likePhotoButton.isHidden = false
         shouldLikePhoto(like, photo: currentPhoto)
     }
     

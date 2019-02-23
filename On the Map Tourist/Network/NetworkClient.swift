@@ -50,7 +50,7 @@ class NetworkClient {
             Constants.FlickrParameterKeys.Method: Constants.FlickrParameterValues.SearchMethod,
             Constants.FlickrParameterKeys.APIKey: Constants.FlickrParameterValues.APIKey,
             Constants.FlickrParameterKeys.SafeSearch: Constants.FlickrParameterValues.UseSafeSearch,
-            Constants.FlickrParameterKeys.Extras: Constants.FlickrParameterValues.MediumURL,
+            Constants.FlickrParameterKeys.Extras: Constants.FlickrParameterValues.SmallURL,
             Constants.FlickrParameterKeys.BoundingBox: bboxString(latitude: lat, longitude: long),
             Constants.FlickrParameterKeys.Format: Constants.FlickrParameterValues.ResponseFormat,
             Constants.FlickrParameterKeys.NoJSONCallback: Constants.FlickrParameterValues.DisableJSONCallback,
@@ -63,8 +63,12 @@ class NetworkClient {
         
         let request = buildURLFromProperties(url: Constants.Flickr.APIHost, andParamaters: methodParameters)
         
+        let session = URLSession.shared
+        session.configuration.timeoutIntervalForRequest = 120
+        session.configuration.timeoutIntervalForResource = 20
+        
         // Create network request
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
+        session.dataTask(with: request) { (data, response, error) in
             
             /* GUARD: Was there an error? */
             guard (error == nil) else {
@@ -94,7 +98,7 @@ class NetworkClient {
             var images: [String] = []
             
             for image in responseFromFlickr.photos.photo {
-                let imageUrl = image.url_m?.absoluteString
+                let imageUrl = image.url_s?.absoluteString
                 images.append(imageUrl!)
             }
             completion(true, nil, nil, images)
@@ -113,7 +117,12 @@ class NetworkClient {
     
     //MARK: Image Downloader
     static func downloadImage(url: URL, completion: @escaping (Bool, Data?, String) -> ()) {
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        
+        let session = URLSession.shared
+        session.configuration.timeoutIntervalForRequest = 120
+        session.configuration.timeoutIntervalForResource = 20
+        
+        session.dataTask(with: url) { (data, response, error) in
             
             /* GUARD: Was there an error? */
             guard (error == nil) else {
