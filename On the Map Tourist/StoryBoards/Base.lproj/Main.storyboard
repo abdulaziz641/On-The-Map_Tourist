@@ -151,20 +151,29 @@
                                     <outlet property="delegate" destination="xA2-07-iud" id="EbL-l3-2RZ"/>
                                 </connections>
                             </collectionView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-p7-9uL">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-p7-9uL">
                                 <rect key="frame" x="0.0" y="83" width="414" height="730"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fetching Images" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkT-3N-gcw">
+                                <rect key="frame" x="144" y="461" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="S8x-an-VAT" firstAttribute="trailing" secondItem="0oe-hJ-Rxn" secondAttribute="trailing" id="0c9-q5-63y"/>
                             <constraint firstItem="wvf-UA-7aX" firstAttribute="trailing" secondItem="0oe-hJ-Rxn" secondAttribute="trailing" id="5Li-yP-Nje"/>
                             <constraint firstItem="S8x-an-VAT" firstAttribute="leading" secondItem="0oe-hJ-Rxn" secondAttribute="leading" id="Ae8-ME-F8w"/>
+                            <constraint firstItem="qkT-3N-gcw" firstAttribute="leading" secondItem="0oe-hJ-Rxn" secondAttribute="leading" constant="144" id="KgU-9J-lRz"/>
                             <constraint firstItem="wvf-UA-7aX" firstAttribute="bottom" secondItem="S8x-an-VAT" secondAttribute="top" id="Mbg-ww-o8d"/>
                             <constraint firstItem="S8x-an-VAT" firstAttribute="bottom" secondItem="0oe-hJ-Rxn" secondAttribute="bottom" id="MhD-de-oOt"/>
                             <constraint firstItem="wvf-UA-7aX" firstAttribute="top" secondItem="S8x-an-VAT" secondAttribute="top" constant="-730" id="QI6-XM-Tei"/>
+                            <constraint firstItem="0oe-hJ-Rxn" firstAttribute="trailing" secondItem="qkT-3N-gcw" secondAttribute="trailing" constant="143" id="Rq4-Mz-4y2"/>
                             <constraint firstItem="wvf-UA-7aX" firstAttribute="leading" secondItem="0oe-hJ-Rxn" secondAttribute="leading" id="WVU-hk-ua0"/>
+                            <constraint firstItem="qkT-3N-gcw" firstAttribute="top" secondItem="0oe-hJ-Rxn" secondAttribute="top" constant="373" id="kSd-ef-ZyS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0oe-hJ-Rxn"/>
                     </view>
@@ -177,6 +186,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="wvf-UA-7aX" id="E33-bf-Djk"/>
+                        <outlet property="fetchingImagesLabel" destination="qkT-3N-gcw" id="Abe-sA-Qnx"/>
                         <outlet property="flowLayout" destination="jrw-0b-9Xl" id="Cla-bv-bXq"/>
                         <outlet property="internetIndicator" destination="sdn-p7-9uL" id="66g-pt-fQT"/>
                         <outlet property="loadNewImagesButton" destination="KAO-B3-mTN" id="qPo-2g-UJU"/>

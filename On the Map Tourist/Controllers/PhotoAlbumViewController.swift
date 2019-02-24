@@ -17,6 +17,7 @@ class PhotoAlbumViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var loadNewImagesButton: UIBarButtonItem!
     @IBOutlet weak var internetIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var fetchingImagesLabel: UILabel!
     
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     var loadedPinFromStore: Pin!
@@ -29,7 +30,6 @@ class PhotoAlbumViewController: UIViewController {
         setupFetchedResultsController()
         shouldFetchNewImages()
         loadNewImagesButton.isEnabled = true
-        internetIndicator.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +47,8 @@ class PhotoAlbumViewController: UIViewController {
     @IBAction func fetchNewImages(_ sender: Any) {
         loadNewImagesButton.isEnabled = false
         loadingNewImages = !loadingNewImages
+        internetIndicator.startAnimating()
+        fetchingImagesLabel.isHidden = false
         for photo in fetchedResultsController.fetchedObjects ?? [] {
             appDelegate.dataController.viewContext.delete(photo)
         }

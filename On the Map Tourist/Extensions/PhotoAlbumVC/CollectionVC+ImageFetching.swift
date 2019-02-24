@@ -18,6 +18,10 @@ extension PhotoAlbumViewController {
         let long = loadedPinFromStore.longitude
         NetworkClient.searchForImageFromFlickr(nil, lat: lat, long: long) { (isSucceeded, _, _, listOfPhotosUrls) in
             if isSucceeded {
+                DispatchQueue.main.async {
+                    self.internetIndicator.stopAnimating()
+                    self.fetchingImagesLabel.isHidden = true
+                }
                 for url in listOfPhotosUrls ?? [] {
                     self.createNewPhoto(for: self.loadedPinFromStore, and: url)
                 }

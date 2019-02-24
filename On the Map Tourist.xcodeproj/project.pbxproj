@@ -10,7 +10,6 @@
 		89083DBA221E048B0012649E /* FavPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89083DB9221E048B0012649E /* FavPhotoCell.swift */; };
 		89083DBD222038A00012649E /* FavPhotoCollectionVC+FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89083DBC222038A00012649E /* FavPhotoCollectionVC+FlowLayout.swift */; };
 		89083DBF2220391C0012649E /* FavPhotoCollectionVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89083DBE2220391C0012649E /* FavPhotoCollectionVC+Delegate.swift */; };
-		89083DC6222335CF0012649E /* MapView-PinAdding.png in Resources */ = {isa = PBXBuildFile; fileRef = 89083DC5222335CF0012649E /* MapView-PinAdding.png */; };
 		894F56E122174370005733E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F56E022174370005733E8 /* AppDelegate.swift */; };
 		894F56E622174370005733E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894F56E422174370005733E8 /* Main.storyboard */; };
 		894F56E922174370005733E8 /* On_the_Map_Tourist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 894F56E722174370005733E8 /* On_the_Map_Tourist.xcdatamodeld */; };
@@ -48,7 +47,6 @@
 		89083DBC222038A00012649E /* FavPhotoCollectionVC+FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavPhotoCollectionVC+FlowLayout.swift"; sourceTree = "<group>"; };
 		89083DBE2220391C0012649E /* FavPhotoCollectionVC+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavPhotoCollectionVC+Delegate.swift"; sourceTree = "<group>"; };
 		89083DC3222313A80012649E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		89083DC5222335CF0012649E /* MapView-PinAdding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MapView-PinAdding.png"; sourceTree = "<group>"; };
 		894F56DD22174370005733E8 /* On the Map Tourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On the Map Tourist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		894F56E022174370005733E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		894F56E522174370005733E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,14 +99,6 @@
 				89083DBE2220391C0012649E /* FavPhotoCollectionVC+Delegate.swift */,
 			);
 			path = FavPhotosVC;
-			sourceTree = "<group>";
-		};
-		89083DC4222335BF0012649E /* MarkDownImages */ = {
-			isa = PBXGroup;
-			children = (
-				89083DC5222335CF0012649E /* MapView-PinAdding.png */,
-			);
-			path = MarkDownImages;
 			sourceTree = "<group>";
 		};
 		894F56D422174370005733E8 = {
@@ -175,7 +165,6 @@
 		894F56F922174477005733E8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				89083DC4222335BF0012649E /* MarkDownImages */,
 				894F56EA22174372005733E8 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -331,7 +320,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89083DC6222335CF0012649E /* MapView-PinAdding.png in Resources */,
 				894F56EE22174372005733E8 /* LaunchScreen.storyboard in Resources */,
 				894F56EB22174372005733E8 /* Assets.xcassets in Resources */,
 				894F56E622174370005733E8 /* Main.storyboard in Resources */,

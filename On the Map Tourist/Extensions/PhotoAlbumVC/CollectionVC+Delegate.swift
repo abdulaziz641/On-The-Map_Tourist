@@ -24,6 +24,10 @@ extension PhotoAlbumViewController:  UICollectionViewDataSource, UICollectionVie
         if let imageData = photo.photoData, let image = UIImage(data: imageData) {
             cell.currentPhoto = photo
             cell.configureCell(with: image, like: photo.isLiked)
+            DispatchQueue.main.async {
+                self.internetIndicator.stopAnimating()
+                self.fetchingImagesLabel.isHidden = true
+            }
         } else if let url = URL(string: photo.photoURL ?? "") {
             NetworkClient.downloadImage(url: url) { (isSucceeded, data, _) in
                 
