@@ -21,6 +21,10 @@ extension PhotoAlbumViewController {
                 for url in listOfPhotosUrls ?? [] {
                     self.createNewPhoto(for: self.loadedPinFromStore, and: url)
                 }
+            } else {
+                DispatchQueue.main.async {
+                    self.showAlert(title: "Network Error", message: "Check your internet connection.", buttonText: "Try again")
+                }
             }
         }
         DispatchQueue.main.async {

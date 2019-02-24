@@ -151,6 +151,10 @@
                                     <outlet property="delegate" destination="xA2-07-iud" id="EbL-l3-2RZ"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-p7-9uL">
+                                <rect key="frame" x="0.0" y="83" width="414" height="730"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -174,6 +178,7 @@
                     <connections>
                         <outlet property="collectionView" destination="wvf-UA-7aX" id="E33-bf-Djk"/>
                         <outlet property="flowLayout" destination="jrw-0b-9Xl" id="Cla-bv-bXq"/>
+                        <outlet property="internetIndicator" destination="sdn-p7-9uL" id="66g-pt-fQT"/>
                         <outlet property="loadNewImagesButton" destination="KAO-B3-mTN" id="qPo-2g-UJU"/>
                     </connections>
                 </viewController>

@@ -16,6 +16,7 @@ class PhotoAlbumViewController: UIViewController {
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var loadNewImagesButton: UIBarButtonItem!
+    @IBOutlet weak var internetIndicator: UIActivityIndicatorView!
     
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     var loadedPinFromStore: Pin!
@@ -28,6 +29,7 @@ class PhotoAlbumViewController: UIViewController {
         setupFetchedResultsController()
         shouldFetchNewImages()
         loadNewImagesButton.isEnabled = true
+        internetIndicator.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
