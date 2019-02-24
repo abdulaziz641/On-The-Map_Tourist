@@ -22,6 +22,9 @@ Also, you can like photos too.
 - Xcode 10
 - iOS 12 or later
 
+## To run the app: 
+- Double click the following file: **On the Map Tourist.xcodeproj* and the project will open, select the desired iOS simulator, and enjoy !!
+
 ## How To:
 
 ### **Add** New Pin:
