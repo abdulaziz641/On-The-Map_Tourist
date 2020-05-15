@@ -9,28 +9,20 @@
 import Foundation
 
 //MARK: Flick Response
-struct FlickResponse: Decodable {
-    struct Photos: Decodable {
-        struct Photo: Decodable {
-            var id: String
-            var owner: String
-            var secret: String
-            var server: String
-            var farm: Int
-            var title: String
-            var ispublic: Int
-            var url_s: URL?
-            var isfriend: Int
-            var isfamily: Int
-            var height_s: String
-            var width_s: String
+struct FlickResponse: Codable {
+    struct Photos: Codable {
+        struct Photo: Codable {
+            let farm, height_s: Int?
+            let id: String?
+            let isfamily, isfriend, ispublic: Int?
+            let owner, secret, server, title: String?
+            let url_s: String?
+            let width_s: Int?
         }
-        var page: Int
-        var pages: Int
-        var perpage: Int
-        var total: String
-        var photo: [Photo]
+            let page, pages, perpage: Int?
+            let photo: [Photo]?
+            let total: String?
     }
-    var photos: Photos
-    var stat: String
+    var photos: Photos?
+    var stat: String?
 }

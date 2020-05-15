@@ -97,9 +97,11 @@ class NetworkClient {
             
             var images: [String] = []
             
-            for image in responseFromFlickr.photos.photo {
-                let imageUrl = image.url_s?.absoluteString
-                images.append(imageUrl!)
+            if let imagesFromResponse = responseFromFlickr.photos?.photo {
+                for image in imagesFromResponse {
+                    let imageUrl = image.url_s
+                    images.append(imageUrl!)
+                }
             }
             completion(true, nil, nil, images)
         }.resume()
